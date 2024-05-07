@@ -1,0 +1,37 @@
+﻿
+@{
+    ViewBag.Title = "FeedIndex";
+}
+<script src="~/Scripts/jquery-3.4.1.min.js"></script>
+<script src="~/Content/Feedback.js"></script>
+
+<h2>FeedIndex</h2>
+<input type="hidden"id="HdnId"/>
+
+<input type="text" id="txtName" placeholder="Enter Name"/>
+<br />
+<input type="text" id="txtEmail" placeholder="Enter Email"/>
+<br />
+<input type="number" id="txtMobile" placeholder="Enter Mobile"/>
+<br />
+<textarea typeof="text" id="txtFeedback" placeholder="Enter your Feedback"></textarea>
+<br />
+
+<input type="button" value="submit" class=" btn btn-success" onclick="Savereg()" />
+
+<table id="tblFeedback" class="table table-bordered">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Mobile</th>
+            <th>Feedback</th>
+            <th></th>
+            <th></th>
+
+
+        </tr>
+    </thead>
+    <tbody></tbody>
+</table>
